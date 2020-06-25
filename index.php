@@ -36,7 +36,7 @@ if (isset($_POST['submit-formulario'])) {
         $mensaje_preparado .= "Lo envia: $correo";
         $mensaje_preparado .= "Mensaje : $mensaje";
 
-        mail($enviar_a,$asunto,$mensaje_preparadoe); // Funcion de php para enviar mails
+        mail($enviar_a,$asunto,$mensaje_preparado); // Funcion de php para enviar mails
 
         $enviado = true;
     } else {

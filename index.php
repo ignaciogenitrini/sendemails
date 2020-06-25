@@ -30,13 +30,13 @@ if (isset($_POST['submit-formulario'])) {
         $mensaje = htmlspecialchars($mensaje);
         $mensaje = stripslashes($mensaje);
 
-        $enviar_a          = 'micaela_genitrini@yahoo.com';
+        $enviar_a          = 'example@yahoo.com';
         $asunto            = 'Prueba de php';
         $mensaje_preparado = "Email enviado por: $nombre";
         $mensaje_preparado .= "Lo envia: $correo";
         $mensaje_preparado .= "Mensaje : $mensaje";
 
-        // mail($enviar_a,$asunto,$mensaje_preparadoe); Funcion de php para enviar mails
+        mail($enviar_a,$asunto,$mensaje_preparadoe); // Funcion de php para enviar mails
 
         $enviado = true;
     } else {

@@ -24,7 +24,7 @@
 	<textarea class="form-control" name="mensaje" id="mensaje" placeholder="Mensaje:"><?php if (!$enviado && isset($mensaje)) {
     echo $mensaje;
 }
-?> "></textarea>
+?></textarea>
 	<?php if (!empty($errores)): ?>
 	<div class="alert error"><?php echo $errores; ?></div>
 	<?php elseif ($enviado): ?>
